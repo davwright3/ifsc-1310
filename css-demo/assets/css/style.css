@@ -1,4 +1,46 @@
-body{
-background-color:aqua;
+/* ---------------Box Sizing----------------- */
 
-}
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ---------------Global Styles----------------- */
+
+  body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+
+  }
+
+  header.primary {
+    background-color: darkviolet;
+    text-align:center;
+    color:#ffffff;
+
+    /*long form*/
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+
+    /*short hand T,R,B,L*/
+    padding:40px 40px 40px 40px;
+
+    text-shadow: 1px 1px #000000;
+
+  }
+
+  header.primary h1{
+    font-size: 2.2rem;
+    margin: 20px 0;
+  }
+
+  header.primary h1 a{
+      color: #ffffff;
+      text-decoration: none;
+  }
