@@ -268,7 +268,7 @@ font-size:.8rem;
 }
 
 /*----------Media Queries-----------------------------------------*/
-@media screen and (max-width:600px)
+@media screen and (max-width:600px){
 
 header.primary ul {
   flex-direction: column;
@@ -284,3 +284,4 @@ header.primary ul {
     margin-bottom:10px;
   }
 
+}
