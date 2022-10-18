@@ -56,6 +56,7 @@ body{
   font-family: 'Roboto', sans-serif;
   margin:0;
   font-family: 'Fira Sans Condensed', sans-serif;
+  line-height:1.8rem;
 
 }
 
@@ -219,12 +220,72 @@ background-color:rgba(0,0,0,.2);
 }
 
 tr:hover{
-backgroud-color:rgba(0,0,0,.3);
+background-color:rgba(0,0,0,.3);
 }
 td{
 border:2px solid #000000;
 padding:2px;
+text-align:right;
+width:33%;
 }
+
+td:first-of-type{
+text-align:left;
+
+}
+
+#demo ol{
+list-style-type: lower-roman;
+list-style-position:outside;
+
+}
+
+#demo ul li{
+  list-style-type: square;
+}
+
+#demo ul ul li{
+  list-style-type: circle;
+}
+
+#demo dl{
+
+
+}
+
+#demo dt{
+font-weight: bold;
+
+}
+
+#demo dd{
+  margin:0;
+}
+
+
+/*Adjacent Sibling Combinator*/
+dd + dt {
+
+  margin-top:20px;
+}
+
+#demo blockquote{
+  background-color: #9d20e6;
+  padding:10px 15px;
+  border: 7px double #000000;
+  border-radius: 15px;
+}
+
+#demo cite{
+  display:flex;
+  font-weight:bold;
+  font-size:.8rem;
+  justify-content: right;
+  margin-top:5px;
+}
+
+
+
 
 /*Attribute Selectors*/
 aside[role="complementary"]{
@@ -282,6 +343,25 @@ header.primary ul {
 
   header.primary nav li{
     margin-bottom:10px;
+  }
+
+  #content {
+    flex-direction:column;
+    
+  }
+
+  #content article.post{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  aside .container{
+flex-direction:column;
+
+  }
+
+  aside .container article.widget{
+width:100%;
   }
 
 }
