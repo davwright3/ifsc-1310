@@ -1,3 +1,19 @@
+/*
+Colors
+#08090D
+#7B838C
+#1A2E40
+#274259
+#4B5A6F
+
+rgba
+
+
+*/
+
+
+
+
 /*--------Box Sizing-------*/
 html {
     box-sizing: border-box;
@@ -12,9 +28,9 @@ html {
 
 /*---------------Utility Classes------------------*/
 .container{
-    width:70vw;
-    margin:40px auto;
-    max-width: 960px;
+    width:80vw;
+    margin:25px auto;
+    max-width: 900px;
     
     }
     
@@ -62,15 +78,15 @@ body{
 
 }
 
-header.primary{
-text-align: center;
-color: #ffffff;
-padding: 6px;
-}
 
 header.primary{
-background: url(../img/helix.png) center;
+text-align: center;
+padding: 6px;
+background: rgba(8,9,13,.7);
+
 }
+
+
 
 /*header.primary::before{
   content:"";
@@ -93,13 +109,16 @@ header.primary ul{
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
+  list-style-type: none;
 
 }
+
+
 
 header.primary nav a{
   text-decoration: none;
   color: black;
-  background: violet;
+  background: rgb(222, 177, 222);
   background: rgba (0,0,0,.4);
   padding: 8px 16px;
   border-radius: 6px 12px;
@@ -109,38 +128,7 @@ header.primary nav a{
 }
 
 
-#overview{
-  border:0;
-  width:100%;
-  background-image: url(../img/helix.png);
-  background-color: white;
-  color:white;
 
-}
-
-footer{
-  height: 100px;
-  background-color: black;
-  color: white;
-}
-
-footer ul{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  
-  
-}
-
-footer li{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  list-style-type: none;
-  text-align: center;
-  width:250px;
-  
-}
 
 
 
