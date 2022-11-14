@@ -75,6 +75,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     margin:0;
+    
 
 }
 
@@ -84,25 +85,8 @@ text-align: center;
 padding: 6px;
 background: rgba(8,9,13,.7);
 
+
 }
-
-
-
-/*header.primary::before{
-  content:"";
-
-
-}*/
-
-/*.replace-scott{
-width:800px;
-height:600px;
-background: url(../img/spacexlogo.png);
-text-indent: 100%;
-white-space: nowrap;
-overflow:hidden;
-
-}*/
 
 header.primary ul{
   padding:0;
@@ -112,8 +96,6 @@ header.primary ul{
   list-style-type: none;
 
 }
-
-
 
 header.primary nav a{
   text-decoration: none;
@@ -126,6 +108,44 @@ header.primary nav a{
   border: 2px solid white;
 
 }
+
+
+
+#articles .container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+}
+
+#articles h2{
+width:100%;
+text-align: center;
+background-color: red;
+}
+
+#articles header{
+  background-color: aqua;
+  text-align: center;
+  
+  }
+
+#articles .post{
+
+width: 30%;
+padding: 5px;
+border: 2px solid black;
+
+
+}
+
+
+
+
+
+
 
 
 
