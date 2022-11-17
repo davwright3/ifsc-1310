@@ -76,6 +76,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     margin:0;
+    background-color: rgba(26,46,64,.4);
     
     
 
@@ -85,9 +86,17 @@ body{
 header.primary{
 text-align: center;
 padding: 6px;
-background: rgba(8,9,13,.7);
+background: rgba(57,88,115,.4);
+background-image: url(../img/dragoninspace.png);
+background-size:cover;
+color: white;
+text-shadow: black;
 
+}
 
+header.primary a{
+  color:white;
+  text-decoration: none;
 }
 
 header.primary ul{
@@ -102,13 +111,23 @@ header.primary ul{
 header.primary nav a{
   text-decoration: none;
   color: black;
-  background: rgb(222, 177, 222);
-  background: rgba (0,0,0,.4);
+  background: rgba(123, 131, 140,.5);
   padding: 8px 16px;
   border-radius: 6px 12px;
   transition: .5s;
-  border: 2px solid white;
+  border: 1px solid white;
+  color: white;
+  transition: .5s;
 
+}
+
+header.primary nav a:hover{
+background: rgba(123,131,140,.8) ;
+}
+
+
+header.primary nav a:active{
+background-color: rgba(26,46,64,.8);
 }
 
 #content {
@@ -119,13 +138,21 @@ background-color: #ffffff;
 
 #content .overview{
   text-align: justify;
+  padding: 25px;
+  border: 5px solid black;  
+  border-radius: 15px;;
+  padding: 10px;
 }
 
 #content .overview h2{
   text-align: center;
+  font-size: 2rem;
+  
 }
 
-
+#content .overview p{
+  font-size: 1.2rem;
+}
 
 #articles .container {
 display: flex;
@@ -134,7 +161,8 @@ flex-wrap: wrap;
 justify-content: space-between;
 background-color: #ffffff;
 border: 5px solid black;
-
+border-radius: 15px;
+padding: 10px;
 
 }
 
@@ -159,13 +187,83 @@ border: 2px solid black;
 
 }
 
+#articles .post ul{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
 #articles .post li{
+list-style-type: none;
+padding: 5px;
+text-align: justify;
+padding-right: 25px;
 
 }
+
+#slideshow{
+  background: white;
+  padding:20px 40px;
+}
+
+#content .container .history{
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  }
+  
+  
+  #content .container .history table{
+  
+    border: 2px solid black;
+    width:80%;
+    margin: 5px auto 10px;
+    border-collapse: collapse;
+  }
+  
+  #content .container .history caption{
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+  }
+  
+  
+  table th, table td{
+    border: solid 2px;
+    
+  }
+
+
+  #content .faq details{
+    margin: 10px 5px 10px 5px;
+    padding:10px 5px 10px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  
+  }
+
+  #content .faq details[open] summary{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+  }
+
+  #content .faq details >p{
+    margin: auto;
+    padding: 8px;
+    
+  }
+
+  #content .contact{
+    border: 1px solid black;
+  }
 
 footer {
 display: flex;
 justify-content: center;
+background: rgba(57,88,115,.4);
 
 }
 
