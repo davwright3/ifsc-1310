@@ -116,27 +116,40 @@ header nav a{
 }
 
 #container{
-    max-width: 70vw;
+    max-width: 65vw;
     margin:10px auto;
     padding: 8px 12px 8px 12px;
-    background-color: lightgray;
-    border:1px solid black;
     border-radius: 15px;
 }
 
-#container.overview,
-#container.history h2{
+#container .overview,
+#container .configurations,
+#container .slideshow,
+#container .history,
+#container .faq,
+#container .contact{
+    margin: 10px 10px 10px 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px 15px 25px 15px;
+    background-color: lightgray;
+}
+
+.overview h2,
+.history h2,
+.faq h2,
+.contact h2{
     text-align: center;
     font-size: 1.8rem;
 }
 
-#container.overview p{
+.overview p{
     font-size: 1.2rem;
     margin:10px;
 }
 
 
-#container.configurations h2{
+.configurations h2{
     width:100%;
     text-align: center;
     font-size:1.8rem;
@@ -201,7 +214,11 @@ footer ul{
 
 }
 
-#container.history table{
+.history p{
+    font-size: 1.2rem;
+}
+
+#container .history table{
     border-collapse: collapse;
     border: 2px solid black;
     font-size:1.2rem;
@@ -210,31 +227,56 @@ footer ul{
 
 }
 
-#container.history table caption{
+#container .history table caption{
     font-size: 1.4rem;
     font-weight: 800;
     border: 2px solid black;
     border-radius: 10px 10px 0 0;
 }
 
-#container.history table thead{
+#container .history table thead{
     text-align: center;
     font-weight: 800;
 }
 
-#container.history table tr:nth-child(even){
+#container .history table tr:nth-child(even){
     background-color: white;
 }
 
-#container.history table td{
+#container .history table td{
     border: 2px solid black;
 }
 
-#container.history figcaption{
+#container .history figcaption{
     text-align: center;
 }
 
-#container.history img{
+#container .history img{
     margin-bottom: 3px;
+    
+}
+
+
+
+details summary{
+    height: 1.5vw;
+    padding-top: 5px;
+    font-size: 1.2rem;
+    margin: 5px;
+    border:2px solid black;
+    border-radius: 8px;
+    font-weight: 600;
+    
+}
+
+
+
+
+details p{
+    padding: 50px 25px 50px 25px;
+    font-size: 1.3rem;
+    box-shadow: -10px 10px 12px gray;
+    border:1px solid black;
+    border-radius: 10px;
     
 }
