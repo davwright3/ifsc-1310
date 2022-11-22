@@ -77,13 +77,164 @@ body{
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     margin:0;
+    background-color: rgba(57,88,115,.4);
 }
 
-header#primary{
-    display:flex;
-    flex-direction: column;
-    margin: auto;
+header.primary{
+    height:300px;
+    text-align: center;
+    margin:0;
     align-items: center;
+    padding-top: 15px;
+    background-image: url(../img/dragoninspace.png);
+    background-color: rgba(57,88,115,.4);
+    background-size: cover;
+    color:white;
+    text-shadow: 2px black;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    margin:auto 30vw;
+    padding:0;
+    justify-content: space-evenly;
+}
+
+header nav li {
+    background-color: rgba(57,88,115,.6);
+    list-style-type: none;  
+    padding: .5em 1em;
+    border: 2px solid white;
+    border-radius: 10px;
+  
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#container{
+    max-width: 70vw;
+    margin:10px auto;
+    padding: 8px 12px 8px 12px;
+    background-color: lightgray;
+    border:1px solid black;
+    border-radius: 15px;
+}
+
+#container.overview,
+#container.history h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#container.overview p{
+    font-size: 1.2rem;
+    margin:10px;
+}
+
+
+#container.configurations h2{
+    width:100%;
+    text-align: center;
+    font-size:1.8rem;
+}
+
+
+
+.articles{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+    
+}
+
+.articles header{
+    
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
+.post {
+border:3px solid black;
+border-radius: 15px;
 
 }
 
+.articles header figcaption{
+    font-size: small;
+}
+
+.articles .post{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: space-evenly;
+    
+}
+
+
+.articles .post ul{
+    list-style-type: none;
+    margin-left:-2em;
+    
+
+}
+
+.articles .post ul li{
+    margin: 10px 5px 5px 5px;
+    padding: 5px;
+}
+
+footer ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: capitalize;
+    list-style-type: none;
+    font-size: 1.3rem;
+
+}
+
+#container.history table{
+    border-collapse: collapse;
+    border: 2px solid black;
+    font-size:1.2rem;
+    margin: 10px auto;
+    
+
+}
+
+#container.history table caption{
+    font-size: 1.4rem;
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 10px 10px 0 0;
+}
+
+#container.history table thead{
+    text-align: center;
+    font-weight: 800;
+}
+
+#container.history table tr:nth-child(even){
+    background-color: white;
+}
+
+#container.history table td{
+    border: 2px solid black;
+}
+
+#container.history figcaption{
+    text-align: center;
+}
+
+#container.history img{
+    margin-bottom: 3px;
+    
+}
