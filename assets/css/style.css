@@ -15,7 +15,7 @@ header#primary {
 }
 
 body nav {
-    background: grey;
+    background: wheat;
 }
 
 body nav a:visited{
@@ -24,5 +24,20 @@ body nav a:visited{
 }
 
 body #content{
-    background: gray;
+    background: wheat;
+    padding: 15px;
+}
+
+div.assignment{
+margin-top: 25px;
+padding: 10px 25px;
+border: 2px solid black;
+border-radius: 15px;
+font-size: 1.2rem;
+
+}
+
+body #content div.assignment h2{
+text-align: center;
+font-size: 1.6rem;
 }
