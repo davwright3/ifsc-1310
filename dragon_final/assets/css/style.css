@@ -127,7 +127,9 @@ header nav a{
 #container .slideshow,
 #container .history,
 #container .faq,
-#container .contact{
+#container .contact,
+#container .info
+{
     margin: 10px 10px 10px 5px;
     border: 2px solid black;
     border-radius: 15px;
@@ -202,6 +204,53 @@ border-radius: 15px;
 .articles .post ul li{
     margin: 10px 5px 5px 5px;
     padding: 5px;
+}
+
+
+aside{
+display:flex;
+}
+
+
+aside .background,
+aside .specs{
+    width:50%;
+    margin: 15px 20px;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+aside .background h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+aside .background p{
+    font-size: 1.2rem;
+}
+
+aside table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    
+}
+
+aside table caption{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+aside table tr{
+border-bottom:1px solid black;
+
+}
+
+aside table td:nth-child(even)
+{
+    text-align: right;
 }
 
 footer ul{
