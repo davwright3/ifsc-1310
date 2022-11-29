@@ -224,6 +224,7 @@ aside .specs{
 aside .background h2{
     text-align: center;
     font-size: 1.8rem;
+    font-weight: 400;
 }
 
 aside .background p{
@@ -241,11 +242,17 @@ aside table caption{
     padding-top: 25px;
     text-align: center;
     font-size: 1.8rem;
+    font-weight: 400;
 }
 
 aside table tr{
 border-bottom:1px solid black;
 
+
+}
+
+aside table td{
+    padding-top: 8px;
 }
 
 aside table td:nth-child(even)
